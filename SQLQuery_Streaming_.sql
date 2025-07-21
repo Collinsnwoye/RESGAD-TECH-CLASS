@@ -1,7 +1,7 @@
 DECLARE @start_time DATETIME = GETDATE()
 DECLARE @date DATETIME = GETDATE()
 
-WHILE DATEDIFF(SECOND, @start_time, GETDATE()) < 1
+WHILE DATEDIFF(SECOND, @start_time, GETDATE()) < 10
 BEGIN
     PRINT CAST(@date AS VARCHAR)
     SET @date = DATEADD(DAY, 1, @date)
