@@ -15,3 +15,9 @@ BEGIN
     PRINT CAST(@date AS VARCHAR)
     SET @date = DATEADD(DAY, 1, @date)
 END
+
+Declare @start_time DATETIME = GETDATE()
+WHILE DATEDIFF(SECOND, @start_time, GETDATE()) < 10
+BEGIN
+    PRINT 'Hi'
+END
