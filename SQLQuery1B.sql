@@ -21,3 +21,4 @@ WHILE DATEDIFF(SECOND, @start_time, GETDATE()) < 10
 BEGIN
     PRINT 'Hi'
 END
+
