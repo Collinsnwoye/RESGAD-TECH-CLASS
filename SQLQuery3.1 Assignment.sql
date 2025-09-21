@@ -28,3 +28,4 @@ FROM Sales_OrderValues;
 SELECT DISTINCT val, ROW_NUMBER() OVER(ORDER BY val) AS rownum 
 
 FROM Sales_OrderValues;
+
